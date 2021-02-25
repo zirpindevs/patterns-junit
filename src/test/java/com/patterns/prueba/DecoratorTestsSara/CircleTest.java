@@ -2,6 +2,8 @@ package com.patterns.prueba.DecoratorTestsSara;
 
 import com.patterns.structural.decorator.Circle;
 import static org.junit.jupiter.api.Assertions.*;
+
+import com.patterns.structural.decorator.Shape;
 import org.junit.jupiter.api.Test;
 
 class CircleTest {
@@ -25,4 +27,10 @@ class CircleTest {
         Circle circle = new Circle();
         assertEquals(false, circle.isHide());
     }
+    @Test
+    void isInstance() {
+        Circle circle = new Circle();
+        assertTrue(circle instanceof Shape);
+    }
+
 }
