@@ -32,4 +32,11 @@ public class State2Test {
         assertNotNull(device.getState());
     }
 
+    @Test
+    @DisplayName("test de off")
+    void testOff(){
+        Off offState = new Off();
+        Device device = new Device(offState);
+        assertNotNull(device.getState());
+    }
 }
