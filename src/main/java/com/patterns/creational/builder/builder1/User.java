@@ -9,6 +9,20 @@ public class User {
     private String nif;
     private Boolean married;
 
+    public Integer getAge() {
+        return age;
+    }
+
+    public Boolean getMarried() {
+        return married;
+    }
+
+    public String getFirstName() {
+        return firstName;
+    }
+
+
+
     private User(Builder builder){
         this.id = builder.id;
         this.firstName = builder.firstName;

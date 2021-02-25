@@ -1,4 +1,4 @@
-package com.patterns.prueba;
+package com.patterns;
 
 public class Calculator {
 
