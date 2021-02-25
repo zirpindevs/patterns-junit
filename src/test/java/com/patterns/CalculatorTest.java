@@ -12,4 +12,9 @@ class CalculatorTest {
         Calculator calc = new Calculator();
         assertEquals(25, calc.multiply(5,5));
     }
+
+    @Test
+    void sumTest(){
+        System.out.println("Suma");
+    }
 }
