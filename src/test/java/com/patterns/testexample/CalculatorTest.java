@@ -1,4 +1,4 @@
-package com.patterns;
+package com.patterns.testexample;
 
 
 import com.patterns.Calculator;

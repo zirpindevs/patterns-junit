@@ -1,13 +1,15 @@
 package com.patterns.behavioral.strategy.strategy1;
 
 import org.junit.jupiter.api.DisplayName;
+import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.Test;
 
 import java.util.function.DoubleBinaryOperator;
 
 import static org.junit.jupiter.api.Assertions.*;
 
-class ProductTest {
+@Tag("")
+public class ProductTest {
 
     @Test
     @DisplayName("Check, Product instance created is not null")

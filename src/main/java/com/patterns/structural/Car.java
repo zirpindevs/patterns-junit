@@ -1,4 +1,4 @@
-package com.patterns.structural.adapter;
+package com.patterns.structural;
 
 public class Car implements Movable{
 

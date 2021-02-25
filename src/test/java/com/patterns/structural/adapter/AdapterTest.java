@@ -1,10 +1,15 @@
 package com.patterns.structural.adapter;
 
+import com.patterns.structural.Motorcycle;
+import com.patterns.structural.Tractor;
+import com.patterns.structural.TractorAdapter;
 import org.junit.jupiter.api.DisplayName;
+import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;
 
+@Tag("database")
 public class AdapterTest {
 
     @Test

@@ -10,7 +10,7 @@ import java.util.function.Function;
 
 import static org.junit.jupiter.api.Assertions.*;
 
-class CreditCardStrategyTest {
+public class CreditCardStrategyTest {
 
     /*
     *   We are going to check CVV code has a length of 3.

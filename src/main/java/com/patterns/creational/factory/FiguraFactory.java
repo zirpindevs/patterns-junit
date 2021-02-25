@@ -1,19 +1,27 @@
 package com.patterns.creational.factory;
 
+import com.patterns.creational.factory.error.FiguraNotFoundException;
+
 public class FiguraFactory {
 
-    public static Figura crearFigura(String tipo){
+    private static final String RECTANGULO = "rectangulo";
+    private static final String CIRCULO = "circulo";
+    private static final String TRIANGULO = "triangulo";
+    public static Figura crearFigura(String tipo) throws FiguraNotFoundException {
+
+        if (tipo == null)
+            throw new FiguraNotFoundException();
 
         switch(tipo){
-            case "rectangulo":
-                 return new Rectangulo();
+            case RECTANGULO:
+                return new Rectangulo();
 //                 return new RectanguloV2();
-            case "circulo":
+            case CIRCULO:
                 return new Circulo();
-            case "triangulo":
+            case TRIANGULO:
                 return new Triangulo();
             default:
-                return new Rectangulo();
+                throw new FiguraNotFoundException();
         }
 
 

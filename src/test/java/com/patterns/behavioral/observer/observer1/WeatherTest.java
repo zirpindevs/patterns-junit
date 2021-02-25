@@ -27,7 +27,12 @@ class WeatherTest {
     @DisplayName("Instancia Weather con lista vacia")
     void crearWeather(){
         Weather weather = new Weather();
-        assertTrue(observers.size()==0);
+        Computer computer = new Computer();
+        WeatherObserver smartphone = new Smartphone();
+        weather.addObserver(computer);
+        weather.addObserver(smartphone);
+        weather.changeWeather(WeatherType.SUNNY);
+        assertTrue(computer.getReceivedMessages().contains("Computer has been notified of weather change: " + WeatherType.SUNNY));
 
     }
 
