@@ -14,6 +14,15 @@ import static org.junit.jupiter.api.Assertions.assertNull;
 public class State2Test {
 
 
+    @BeforeAll
+    static  void setupClass(){
+        System.out.println("init test");
+    }
+    @AfterAll
+    static void tearDown(){
+        System.out.println("AfterAll");
+    }
+
 
 
 }
