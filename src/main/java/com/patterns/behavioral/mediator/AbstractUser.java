@@ -15,4 +15,5 @@ public abstract class AbstractUser {
 
     public abstract void receive(String message);
 
+
 }
