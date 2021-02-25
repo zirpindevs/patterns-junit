@@ -15,18 +15,19 @@ public class State2Test {
 
 
     @BeforeAll
-    static  void setupClass(){
+    static void setupClass() {
         System.out.println("init test");
     }
+
     @AfterAll
-    static void tearDown(){
+    static void tearDown() {
         System.out.println("AfterAll");
     }
 
 
     @Test
     @DisplayName("test de on")
-    void testOn(){
+    void testOn() {
         On onState = new On();
         Device device = new Device(onState);
         assertNotNull(device.getState());
@@ -34,9 +35,17 @@ public class State2Test {
 
     @Test
     @DisplayName("test de off")
-    void testOff(){
+    void testOff() {
         Off offState = new Off();
         Device device = new Device(offState);
+        assertNotNull(device.getState());
+    }
+
+    @Test
+    @DisplayName("test de get state")
+    void testGetState() {
+        Off initialState = new Off();
+        Device device = new Device(initialState);
         assertNotNull(device.getState());
     }
 }
