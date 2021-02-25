@@ -48,4 +48,13 @@ public class State2Test {
         Device device = new Device(initialState);
         assertNotNull(device.getState());
     }
+
+    @Test
+    @DisplayName("test de press button")
+    void testPress(){
+        Device device = new Device(new Off());
+        device.setState(new On());
+        device.pressButton();
+    }
+
 }
