@@ -24,5 +24,12 @@ public class State2Test {
     }
 
 
+    @Test
+    @DisplayName("test de on")
+    void testOn(){
+        On onState = new On();
+        Device device = new Device(onState);
+        assertNotNull(device.getState());
+    }
 
 }
