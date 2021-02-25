@@ -1,4 +1,4 @@
-package solid;
+package com.patterns.solid;
 
 public class ElectricCar implements ICar{
 
