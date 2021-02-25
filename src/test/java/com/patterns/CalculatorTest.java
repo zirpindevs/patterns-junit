@@ -19,4 +19,10 @@ class CalculatorTest {
     void sumTest(){
         System.out.println("Suma");
     }
+
+
+    @Test
+    void subTest(){
+        System.out.println("Resta");
+    }
 }
