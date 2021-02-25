@@ -29,8 +29,6 @@ public class Employee {
         private String name;
         private String lastname;
 
-        private EmployeeBuilder() {
-        }
 
         public static EmployeeBuilder aEmployee() {
             return new EmployeeBuilder();
