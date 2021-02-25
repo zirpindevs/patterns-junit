@@ -1,4 +1,5 @@
 package com.patterns.structural.adapter;
+import com.patterns.structural.adapter.*;
 
 public class TractorAdapter implements Movable{
 
@@ -16,5 +17,8 @@ public class TractorAdapter implements Movable{
     @Override
     public void brake(double quantity) {
 
+    }
+    public double getSpeed() {
+        return this.tractor.getSpeed();
     }
 }
