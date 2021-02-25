@@ -23,6 +23,11 @@ class AbstractUserTest {
         assertNotNull(user1);
     }
 
+    @Test
+    @DisplayName("comprobando user1 notEqual user2 ")
+    void test2() {
+        assertNotEquals(user1, user2);
+    }
 
     @Test
     @DisplayName("comprobando user1 instanceof AbstractUser ")
