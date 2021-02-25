@@ -65,6 +65,13 @@ class WeatherTest {
     }
 
     @Test
+    @DisplayName("cambiar el tiempo")//parametros
     void changeWeather() {
+        WeatherType type = WeatherType.RAINY;
+        WeatherObserver computer = new Computer();
+        computer.update(type);
+
+
+
     }
 }
