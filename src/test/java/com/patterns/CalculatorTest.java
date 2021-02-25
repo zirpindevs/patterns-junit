@@ -1,6 +1,7 @@
 package com.patterns;
 
 import com.patterns.Calculator;
+
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;
@@ -17,4 +18,5 @@ class CalculatorTest {
     void sumTest(){
         System.out.println("Suma");
     }
+
 }
