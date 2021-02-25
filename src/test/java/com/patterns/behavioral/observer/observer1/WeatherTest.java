@@ -32,11 +32,36 @@ class WeatherTest {
     }
 
     @Test
+    @DisplayName("Añadir Observador")
     void addObserver() {
+        int size = 0;
+
+        WeatherObserver computer = new Computer();
+        WeatherObserver smartphone = new Smartphone();
+        observers.add(computer);
+        assertTrue(observers.size()>0);
+        size = observers.size();
+        observers.add(smartphone);
+
+        for (WeatherObserver observer:this.observers){
+            assertNotEquals(size,observers.size());
+
+        }
     }
 
     @Test
+    @DisplayName("Eliminar Observador")
     void removeObserver() {
+        observers = new ArrayList<>();
+        WeatherObserver computer = new Computer();
+        WeatherObserver smartphone = new Smartphone();
+        observers.add(computer);
+        observers.add(smartphone);
+        int count = observers.size();
+
+        observers.remove(computer);
+        int count2 = observers.size();
+        assertNotEquals(count,count2);
     }
 
     @Test
