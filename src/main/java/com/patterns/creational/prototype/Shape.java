@@ -1,6 +1,6 @@
 package com.patterns.creational.prototype;
 
-public abstract class Shape {
+public abstract class Shape implements  Cloneable{
 
     private String color;
 
