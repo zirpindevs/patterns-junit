@@ -11,7 +11,7 @@ class Strategy2Test {
     Context numericCtx = new Context(new NumericStrategy());
 
     @Test
-    @DisplayName("Validacion de mayúsculas")
+    @DisplayName("Validacion mayúsculas")
     void testMayusculas() {
 
         assertNotNull(upperCaseCtx);
@@ -22,7 +22,7 @@ class Strategy2Test {
     }
 
     @Test
-    @DisplayName("Validacion de minúsculas")
+    @DisplayName("Validacion minúsculas")
     void testMinusculas() {
 
         assertNotNull(lowerCaseCtx);
