@@ -1,8 +1,12 @@
-package com.patterns.behavioral.iterator.iterator1;
+package com.patterns.mockito.iterator.iterator1;
 
+import com.patterns.behavioral.iterator.iterator1.Book;
+import com.patterns.behavioral.iterator.iterator1.BookShop;
+import com.patterns.behavioral.iterator.iterator1.CustomIterator;
 import org.junit.jupiter.api.Test;
 
-import static org.junit.jupiter.api.Assertions.*;
+import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertTrue;
 
 class BookShopTest {
 

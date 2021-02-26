@@ -1,8 +1,12 @@
 package com.patterns.behavioral.iterator.iterator1;
 
+import org.junit.jupiter.api.Tag;
+
 import java.util.ArrayList;
 import java.util.List;
 
+@Tag("database")// Es una etiqueta para que en la clase SuiteTest podamos definir que se ejecuten las clases
+                // o métodos que queramos seleccionandolos por etiqueta "@Tag"
 public class BookShop implements IBookShop{
 
     // estructura datos interna
@@ -21,12 +25,13 @@ public class BookShop implements IBookShop{
 
     // metodo que obtiene un libro en concreto
     public Object getOne(int index) {
-        return books.get(index);
+        return books.get(index - 1);
     }
 
     // metodo que devuelve el tamaño de la librería
     public int getSize() {
-        return books.size() - 1;
+        System.out.println("getSize(): " + books.size());
+        return books.size();
     }
 
     // iterador para recuperar elementos de la estructura interna
