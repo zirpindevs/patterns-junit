@@ -1,9 +1,17 @@
 
-j
-:src/main/java/com/patterns/structural/adapter/Tractor.java,7\2\72baaa97156d5a93d9e40c9e925d7e064e43b387
-f
-6src/main/java/com/patterns/structural/adapter/Car.java,4\e\4e7c14ef409bc52871d0510ca6221b84efb54f33
 n
 >src/test/java/com/patterns/structural/adapter/AdapterTest.java,c\a\ca10233e0099255d90c45c3f1e5539a2a635141e
+c
+3src/test/java/com/patterns/state1/OffStateTest.java,a\3\a3a428fefda73282b6d08d49fd72844e4c8483f5
+h
+8src/test/java/com/patterns/state1/DeviceContextTest.java,3\8\38b6e210b12fcd4ad094e1cb41ab3afe667a38d0
+w
+Gsrc/test/java/com/patterns/prueba/DecoratorTestsSara/RectangleTest.java,9\2\9260df4ac505184f2429ea02edc949e510ae9346
+l
+<src/main/java/com/patterns/behavioral/state/state1/Main.java,6\2\62b0721fe41346a7e0192e2dbe9744ba29c0a737
+†
+Vsrc/test/java/com/patterns/prueba/DecoratorTestsSara/BorderThicknessDecoratorTest.java,4\7\47dd0f9fdcad07d6ca7cd02949e6b9eb4ea48d48
 q
-Asrc/main/java/com/patterns/structural/adapter/TractorAdapter.java,e\9\e9bdb27567e17c6e11d1d21c6c854e635ad78894
+Asrc/test/java/com/patterns/mockito/observer1alan/WeatherTest.java,7\7\77bb400933154a4cf8208c7051e6256a4961d66e
+n
+>src/test/java/com/patterns/mockito/state1Salvi/State1Test.java,6\c\6c810f2faa0d79ea94a5d8f07c1b0f5d4cbd17bc
