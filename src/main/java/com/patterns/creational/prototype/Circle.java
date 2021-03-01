@@ -2,32 +2,36 @@ package com.patterns.creational.prototype;
 
 public class Circle extends Shape{
 
-    private int width;
-    private int height;
+    private double radio;
 
-    public Circle(String color, int width, int height){
+
+    public Circle(String color, double radio){
         super(color);
-        this.width = width;
-        this.height = height;
+        this.radio = radio;
     }
 
-    public int getWidth() {
-        return width;
+    public double getRadio() {
+        return radio;
     }
 
-    public void setWidth(int width) {
-        this.width = width;
+    public Circle setRadio(double radio) {
+        this.radio = radio;
+        return this;
     }
 
-    public int getHeight() {
-        return height;
-    }
-
-    public void setHeight(int height) {
-        this.height = height;
+    @Override
+    public Double area() {
+        return Math.PI*radio*radio;
     }
 
     public Circle clone() throws CloneNotSupportedException {
         return (Circle) super.clone();
+    }
+
+    @Override
+    public String toString() {
+        return "Circle{" +
+                "radio=" + radio +
+                "} " + super.toString();
     }
 }
