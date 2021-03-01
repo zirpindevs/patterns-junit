@@ -1,5 +1,6 @@
 package com.patterns.behavioral.observer.observer2;
 
+import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;
@@ -7,9 +8,10 @@ import static org.junit.jupiter.api.Assertions.*;
 class ConcreteSubjectTest {
 
     @Test
+    @DisplayName("Añadir Suscriptor")
     void addSubscriberTest() {
         ConcreteSubject elon = new ConcreteSubject("@elonmusk");
-        Observer bloomberg = new ConcreteObserver("Bloomberg");
+        Observer bloomberg = new ConcreteObserver("bloomberg");
         assertEquals(0, elon.observers.size());
         elon.addSubscriber(bloomberg);
         assertTrue(elon.handle == "@elonmusk");
@@ -18,9 +20,10 @@ class ConcreteSubjectTest {
     }
 
     @Test
+    @DisplayName("Eliminar Suscriptor")
     void removeSubscriberTest() {
         ConcreteSubject elon = new ConcreteSubject("@elonmusk");
-        Observer bloomberg = new ConcreteObserver("Bloomberg");
+        Observer bloomberg = new ConcreteObserver("bloomberg");
         elon.addSubscriber(bloomberg);
         assertEquals(1, elon.observers.size());
         elon.removeSubscriber(bloomberg);
@@ -29,17 +32,12 @@ class ConcreteSubjectTest {
     }
 
     @Test
+    @DisplayName("Notificar Suscriptor")
     void notifySubscribersTest() {
-
-
-    }
-
-    @Test
-    void tweetTest() {
         ConcreteSubject elon = new ConcreteSubject("@elonmusk");
-        Observer bloomberg = new ConcreteObserver("Bloomberg");
-        String testname;
-
-
+        Observer bloomberg = new ConcreteObserver("bloomberg");
+     //   System.out.println(bloomberg.notify(elon.handle, "Test"));
+        assertTrue(elon.handle == bloomberg.notify(elon.handle, "Test"));
     }
+
 }
