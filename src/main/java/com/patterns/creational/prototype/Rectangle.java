@@ -1,33 +1,50 @@
 package com.patterns.creational.prototype;
 
+
 public class Rectangle extends Shape{
 
-    private int width;
-    private int height;
+    private double width;
+    private double height;
 
-    public Rectangle(String color, int width, int height){
+    // Constructores
+    public Rectangle(){}
+    public Rectangle(String color, double width, double height){
         super(color);
         this.width = width;
         this.height = height;
     }
 
-    public int getWidth() {
+    // Getters y Setters
+    public double getWidth() {
         return width;
     }
-
-    public void setWidth(int width) {
+    public void setWidth(double width) {
         this.width = width;
     }
 
-    public int getHeight() {
+    public double getHeight() {
         return height;
     }
-
-    public void setHeight(int height) {
+    public void setHeight(double height) {
         this.height = height;
     }
 
+    // método clone()
     public Rectangle clone() throws CloneNotSupportedException {
         return (Rectangle) super.clone();
+    }
+
+    // método area()
+    @Override
+    public Double area() {
+        return height*width;
+    }
+
+    @Override
+    public String toString() {
+        return "Rectangle{" +
+                "width=" + width +
+                ", height=" + height +
+                "} " + super.toString();
     }
 }

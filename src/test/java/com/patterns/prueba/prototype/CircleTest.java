@@ -12,20 +12,28 @@ public class CircleTest {
     @Test
     @DisplayName("InstanceOf")
     void testCircle(){
-        Circle circle = new Circle("amarillo", 10,10);
+        Circle circle = new Circle("amarillo", 1.0);
         assertTrue(circle instanceof Circle);
     }
 
     @Test
     @DisplayName("Clone")
     void testClone() throws CloneNotSupportedException{
-        Circle circle =  new Circle("amarillo", 20,20);
+        Circle circle =  new Circle("amarillo", 2.0);
         Circle circleClonado = circle.clone();
 
         assertNotEquals(circle, circleClonado);
 
         assertEquals(circle.getColor(), circleClonado.getColor());
-        assertEquals(circle.getHeight(), circle.getWidth());
-        assertEquals(circle.getWidth(),  circleClonado.getWidth());
+        assertEquals(circle.getRadio(), circleClonado.getRadio());
+        assertEquals(circle.getRadio(),  circleClonado.getRadio());
+    }
+
+    @Test
+    @DisplayName("Area")
+    void testArea() throws CloneNotSupportedException{
+        Circle circle =  new Circle("amarillo", 1.0);
+
+        assertEquals(Math.PI,  circle.area());
     }
 }
