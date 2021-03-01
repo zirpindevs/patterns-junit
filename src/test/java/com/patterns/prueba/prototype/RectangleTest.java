@@ -28,4 +28,12 @@ public class RectangleTest {
         assertEquals(rect.getWidth(),rectClonado.getWidth());
     }
 
+    @Test
+    @DisplayName("Area")
+    void testArea(){
+        Rectangle rect = new Rectangle("blanco", 2.0, 5.0);
+
+        assertEquals(10.0, rect.area());
+    }
+
 }
