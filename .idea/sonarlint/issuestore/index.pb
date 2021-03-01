@@ -15,3 +15,5 @@ q
 Asrc/test/java/com/patterns/mockito/observer1alan/WeatherTest.java,7\7\77bb400933154a4cf8208c7051e6256a4961d66e
 n
 >src/test/java/com/patterns/mockito/state1Salvi/State1Test.java,6\c\6c810f2faa0d79ea94a5d8f07c1b0f5d4cbd17bc
+b
+2src/test/java/com/patterns/state1/OnStateTest.java,4\d\4d0d1906c3d2dc27a206d3a72ac509c1fc9e2138
