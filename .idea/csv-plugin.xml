@@ -3,9 +3,6 @@
   <component name="CsvFileAttributes">
     <option name="attributeMap">
       <map>
-<<<<<<< HEAD
-        <entry key="\src\main\java\com\patterns\behavioral\observer\observer1\Weather.java">
-=======
         <entry key="/src/main/java/com/patterns/behavioral/iterator/iterator1/BookShop.java">
           <value>
             <Attribute>
@@ -13,8 +10,28 @@
             </Attribute>
           </value>
         </entry>
+        <entry key="/src/main/java/mockito/iterator/iterator1/BookShop.java">
+          <value>
+            <Attribute>
+              <option name="separator" value=";" />
+            </Attribute>
+          </value>
+        </entry>
         <entry key="/src/test/java/com/patterns/behavioral/iterator/iterator1/BookShopTest.java">
->>>>>>> develop
+          <value>
+            <Attribute>
+              <option name="separator" value=";" />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="/src/test/java/com/patterns/mockito/iterator/BookShopTest.java">
+          <value>
+            <Attribute>
+              <option name="separator" value=";" />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="/src/test/java/com/patterns/mockito/observer1alan/WeatherTest.java">
           <value>
             <Attribute>
               <option name="separator" value=";" />
