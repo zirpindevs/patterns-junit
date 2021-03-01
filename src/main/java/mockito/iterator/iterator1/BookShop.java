@@ -4,6 +4,7 @@ import org.junit.jupiter.api.Tag;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Optional;
 
 @Tag("database")// Es una etiqueta para que en la clase SuiteTest podamos definir que se ejecuten las clases
                 // o métodos que queramos seleccionandolos por etiqueta "@Tag"
@@ -24,8 +25,14 @@ public class BookShop implements IBookShop {
     }
 
     // metodo que obtiene un libro en concreto
-    public Object getOne(int index) {
-        return books.get(index - 1);
+    public Optional<Book> getOne(int index) {
+        if (index < 0)
+            index = 0;
+
+        if (index > this.getSize() - 1)
+            index = this.getSize() - 1;
+
+        return Optional.of(books.get(index)); // 0
     }
 
     // metodo que devuelve el tamaño de la librería

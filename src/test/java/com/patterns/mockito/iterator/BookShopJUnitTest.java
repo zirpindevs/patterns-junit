@@ -20,25 +20,14 @@ public class BookShopJUnitTest {
     @Test
     @DisplayName("Test name")
     public void testName() {
+
         Book book1 = new Book("1234379873","Darwin",1990);
         Book book2 = new Book("1234379873","Darwin",1990);
 
         bookShop.addBook(book1);
         bookShop.addBook(book2);
 
-
-
-
-                Assertions.assertEquals(2,bookShop.getSize());
-
-
-
-
-
-
-
-
-
+        Assertions.assertEquals(2,bookShop.getSize());
 
     }
 
