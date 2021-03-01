@@ -55,6 +55,10 @@ public class BookShop implements IBookShop{
 
         @Override
         public Object next() {
+
+            if(books.size() == 0)
+                return false;
+
             return books.get(currentIndex++);
         }
 
