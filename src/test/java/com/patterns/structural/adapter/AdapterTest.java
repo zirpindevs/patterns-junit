@@ -28,7 +28,7 @@ public class AdapterTest {
     void speedUpTest () {
         TractorAdapter tractor = new TractorAdapter();
         tractor.speedUp(10);
-        assertEquals(15.0,tractor.getSpeed());
+        assertEquals(5.0,tractor.getSpeed());
 
     }
     @Test
@@ -51,7 +51,11 @@ public class AdapterTest {
     @Test
     @DisplayName("Comprobar velocidad de frenado del tractor")
     void brakeTractor () {
-        Tractor tractor = new Tractor();
+        TractorAdapter tractor = new TractorAdapter();
+        tractor.speedUp(10);
+        tractor.brake(5);
+        assertEquals(0,tractor.getSpeed());
+
 
 
     }
