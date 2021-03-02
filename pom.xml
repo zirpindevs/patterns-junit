@@ -10,6 +10,7 @@
     <name>JUnit Patterns</name>
     <url>https://github.com/alansastre/patterns-junit</url>
     <description>Unit testing project with patterns</description>
+    <packaging>jar</packaging>
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -65,6 +66,13 @@
                 <artifactId>maven-surefire-report-plugin</artifactId>
                 <version>3.0.0-M5</version>
             </plugin>
+
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-checkstyle-plugin</artifactId>
+                <version>3.1.1</version>
+            </plugin>
+
         </plugins>
     </reporting>
 <build>
