@@ -32,10 +32,10 @@ public class BookShopMockitoTest {
     @DisplayName("Check retrieve one book")
     public void testName() {
 
-        //Book normalBook = new Book("ssdsd","sdad",12);
+        Book normalBook = new Book("ssdsd","sdad",12);
         when(book.getIsbn()).thenReturn("12345");
         bookShop.addBook(book);
-        //bookShop.addBook(normalBook);
+        bookShop.addBook(normalBook);
         Assertions.assertEquals(2,bookShop.getSize());
         Optional<Book> bookOpt =  bookShop.getOne(0);
         Assertions.assertTrue(bookOpt.isPresent());
