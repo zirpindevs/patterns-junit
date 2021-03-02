@@ -8,8 +8,10 @@ public class Tractor {
         switch (mode){
             case 1:
                 this.speed = 5; // tortuga
+                break;
             case 2:
                 this.speed = 15; // liebre
+                break;
         }
     }
 

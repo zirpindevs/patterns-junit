@@ -15,7 +15,12 @@ public class TractorAdapter implements Movable{
 
     @Override
     public void brake(double quantity) {
-        // TODO - implement brake function
+        if(this.tractor.getSpeed() - quantity <= 0){
+            this.tractor.setSpeed(0);
+        }else{
+            this.tractor.setSpeed(tractor.getSpeed() - quantity);
+        }
+
     }
     public double getSpeed() {
         return this.tractor.getSpeed();
