@@ -55,6 +55,7 @@ public class State2Test {
         Device device = new Device(new Off());
         device.setState(new On());
         device.pressButton();
+        assertNotNull(device);
     }
 
 }
