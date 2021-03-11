@@ -19,9 +19,11 @@ class BorderThicknessDecoratorTest {
         assertEquals("Border thickness is: 2px", rectanguloDecorado.draw());
     } */
 
+/*
     @Test
     void resize() {
     }
+*/
 
     @Test
     void description() {
@@ -34,6 +36,6 @@ class BorderThicknessDecoratorTest {
     void isHide() {
         Shape circulo = new Circle();
         Shape circuloDecorado = new BorderThicknessDecorator(circulo, "2px");
-        assertEquals(false,circuloDecorado.isHide());
+        assertFalse(circuloDecorado.isHide());
     }
 }
