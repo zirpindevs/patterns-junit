@@ -33,7 +33,7 @@ public class BookShop implements IBookShop{
 
     // metodo que devuelve el tamaño de la librería
     public int getSize() {
-        log.info("getSize(): " + books.size());
+        log.info("getSize()" + books.size());
         return books.size();
     }
 

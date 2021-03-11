@@ -22,6 +22,9 @@ class WeatherTest {
 
         WeatherObserver computer = new Computer();
         WeatherObserver smartphone = new Smartphone();
+
+        assertNotNull(computer);;
+        assertNotNull(smartphone);
     }
     @Test
     @DisplayName("Instancia Weather con lista vacia")
