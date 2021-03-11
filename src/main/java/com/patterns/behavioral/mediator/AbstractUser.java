@@ -13,7 +13,7 @@ public abstract class AbstractUser {
 
     public abstract void send(String message);
 
-    public abstract void receive(String message);
+    public abstract String receive(String message);
 
 
 }

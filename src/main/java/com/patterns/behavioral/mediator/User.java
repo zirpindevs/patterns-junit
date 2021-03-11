@@ -12,7 +12,8 @@ public class User extends AbstractUser{
     }
 
     @Override
-    public void receive(String message) {
+    public String receive(String message) {
         System.out.println(this.name + ": message received " + message);
+        return message;
     }
 }
