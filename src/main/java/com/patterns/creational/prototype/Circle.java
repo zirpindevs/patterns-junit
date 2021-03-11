@@ -4,8 +4,9 @@ public class Circle extends Shape{
 
     private double radio;
 
-    public Circle() {
-        super();
+    public Circle(Circle cloneCircle) {
+        this.setRadio(cloneCircle.getRadio());
+        this.setColor(cloneCircle.getColor());
     }
 
     public Circle(String color, double radio){
