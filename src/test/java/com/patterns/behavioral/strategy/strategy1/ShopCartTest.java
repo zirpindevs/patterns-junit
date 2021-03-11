@@ -13,5 +13,12 @@ public class ShopCartTest {
         ShopCart trolley = new ShopCart();
     }
 
+    @Test
+    @DisplayName("Check cart")
+    void testCart(){
+        ShopCart shopCart = new ShopCart();
+        assertNotNull(shopCart);
+    }
+
 
 }
