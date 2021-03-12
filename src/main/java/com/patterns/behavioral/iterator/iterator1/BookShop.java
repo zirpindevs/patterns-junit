@@ -60,7 +60,7 @@ public class BookShop implements IBookShop{
         @Override
         public Object next() {
 
-            if(books.size() == 0)
+            if(books.isEmpty())
                 return false;
 
             return books.get(currentIndex++);
