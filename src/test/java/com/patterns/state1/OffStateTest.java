@@ -5,16 +5,17 @@ import com.patterns.behavioral.state.state1.State;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 
+import static org.junit.jupiter.api.Assertions.assertNotNull;
 import static org.junit.jupiter.api.Assertions.assertTrue;
 
 @DisplayName("offState")
-public class OffStateTest {
+class OffStateTest {
 
     @Test
     @DisplayName("offStatenotNull")
     void offStatenotNull()  {
         State stop = new OffState();
-        assertTrue(stop!= null);
+        assertNotNull(stop);
     }
     @Test
     @DisplayName("offStateisoffState")
